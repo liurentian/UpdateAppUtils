@@ -4,5 +4,18 @@
     <style name="AppTheme" parent="android:Theme.Light">
         <!-- Customize your theme here. -->
     </style>
-
+    <style name="ConfirmDialogTheme" parent="@android:style/Theme.Dialog">
+        <!-- 说明提示框是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 说明提示框是否是浮动的 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 说明提示框是否是透明的 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 说明提示框是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 说明提示框的背景颜色是什么 -->
+        <item name="android:windowBackground">@drawable/bg_dialog_confirm</item>
+        <!-- 说明是否充许对话框的背景变暗。为true则充许变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
 </resources>
