@@ -41,11 +41,12 @@ public class DownloadAppUtil {
             request.setVisibleInDownloadsUi(true);
 
             String filePath=null;
-            if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED){//SD卡是否正常挂载
+            if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){//SD卡是否正常挂载
                 filePath = Environment.getExternalStorageDirectory().getAbsolutePath();
             }else{
                 Log.i(TAG,"没有SD卡"+"filePath:"+context.getFilesDir().getAbsolutePath());
-                filePath=context.getFilesDir().getAbsolutePath();
+//                filePath=context.getFilesDir().getAbsolutePath();
+                return;
                 //
             }
             downloadUpdateApkFilePath=filePath+ File.separator+fileName;
