@@ -46,6 +46,7 @@ public class DownloadAppUtil {
             }else{
                 Log.i(TAG,"没有SD卡"+"filePath:"+context.getFilesDir().getAbsolutePath());
                 filePath=context.getFilesDir().getAbsolutePath();
+                //
             }
             downloadUpdateApkFilePath=filePath+ File.separator+fileName;
             // 若存在，则删除
