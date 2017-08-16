@@ -6,7 +6,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "26.0.0"
     defaultConfig {
-        applicationId "com.updateapputils"
+//        applicationId "com.updateapputils"
         minSdkVersion 9
         targetSdkVersion 25
         versionCode 1
