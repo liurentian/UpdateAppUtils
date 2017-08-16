@@ -42,7 +42,7 @@ public class UpdateAppUtil {
         getLocalVersion(activity);
     }
 
-    public UpdateAppUtil from(Activity activity){
+    public static UpdateAppUtil from(Activity activity){
         return new UpdateAppUtil(activity);
     }
 
