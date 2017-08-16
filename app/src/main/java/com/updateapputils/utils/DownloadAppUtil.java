@@ -44,8 +44,8 @@ public class DownloadAppUtil {
             if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED){//SD卡是否正常挂载
                 filePath = Environment.getExternalStorageDirectory().getAbsolutePath();
             }else{
-                Log.i(TAG,"没有SD卡");
-                return;
+                Log.i(TAG,"没有SD卡"+"filePath:"+context.getFilesDir().getAbsolutePath());
+                filePath=context.getFilesDir().getAbsolutePath();
             }
             downloadUpdateApkFilePath=filePath+ File.separator+fileName;
             // 若存在，则删除
