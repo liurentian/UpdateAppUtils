@@ -1,5 +1,5 @@
 # UpdateAppUtils
-App更新工具
+App更新工具 --->  一行代码实现app更新功能
 # 效果预览图
 ![img](https://github.com/liurentian/UpdateAppUtils/blob/master/demo.gif)
 
